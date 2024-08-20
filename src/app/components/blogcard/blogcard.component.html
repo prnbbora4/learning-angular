@@ -1,0 +1,8 @@
+<div class="blog-card-container">
+  <img class="img" [src]="blog.photo" alt="no image" />
+
+  <h3>{{ blog.name }}</h3>
+  <p>{{ blog.city }}, {{ blog.state }}</p>
+
+  <a [routerLink]="'details/' + blog.id"> view details</a>
+</div>

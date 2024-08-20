@@ -1,0 +1,13 @@
+.blog-card-container {
+  /* width: 400px; */
+  /* height: 450px; */
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
