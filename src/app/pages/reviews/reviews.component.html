@@ -1,0 +1,19 @@
+<topbar></topbar>
+<p>reviews works!</p>
+
+@for (item of reviewsList; track $index) {
+<div
+  style="
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem 0;
+  "
+>
+  <p>{{ item.name }}</p>
+  <p style="color: gray">
+    <u>{{ item.email }}</u>
+  </p>
+  <p>{{ item.body }}</p>
+</div>
+}
