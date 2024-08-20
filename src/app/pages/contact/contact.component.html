@@ -1,0 +1,29 @@
+<topbar></topbar>
+<p>contact works!</p>
+
+<div>
+  <form
+    [formGroup]="contactForm"
+    style="display: flex; flex-direction: column; width: 50%; margin-top: 2rem"
+    (ngSubmit)="onSubmit()"
+  >
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" formControlName="name" />
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" formControlName="email" />
+    <label for="phone">Phone</label>
+    <input type="text" name="phone" id="phone" formControlName="phone" />
+    <label for="message">Message</label>
+    <textarea
+      type="text"
+      name="message"
+      id="message"
+      rows="10"
+      formControlName="message"
+    >
+    </textarea>
+    <button class="btn-primary" type="submit" style="margin-top: 2rem">
+      Submit
+    </button>
+  </form>
+</div>
