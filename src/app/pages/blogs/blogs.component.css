@@ -1,0 +1,19 @@
+.blog-card-container {
+  /*no control how many columns */
+  /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px; */
+
+  /* controls how many columns */
+  --w: 500px;
+  --n: 4;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      clamp(100%/ (var(--n) + 1) + 0.1%, (var(--w) - 100vw) * 1000, 100%),
+      1fr
+    )
+  );
+  gap: 10px;
+}
