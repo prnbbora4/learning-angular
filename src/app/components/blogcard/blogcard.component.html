@@ -1,7 +1,18 @@
 <div class="blog-card-container">
   <img class="img" [src]="blog.photo" alt="no image" />
 
-  <h3>{{ blog.name }}</h3>
+  <div class="heading-container">
+    <h3
+      style="
+        text-overflow: ellipsis;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      "
+    >
+      {{ blog.name }}
+    </h3>
+  </div>
   <p>{{ blog.city }}, {{ blog.state }}</p>
 
   <a [routerLink]="'details/' + blog.id"> view details</a>
