@@ -1,0 +1,7 @@
+<div class="team-container">
+  <ul>
+    @for (member of team_members; track member.name) {
+    <li>Name: {{ member.name.toUpperCase() }} Age : {{ member.age }}</li>
+    }
+  </ul>
+</div>
